@@ -20,7 +20,7 @@ class BallArcAnimationOverlay extends StatefulWidget {
   State<BallArcAnimationOverlay> createState() =>
       _BallArcAnimationOverlayState();
 }
-
+   
 class _BallArcAnimationOverlayState extends State<BallArcAnimationOverlay>
     with SingleTickerProviderStateMixin {
   late AnimationController _ctrl;
@@ -49,7 +49,6 @@ class _BallArcAnimationOverlayState extends State<BallArcAnimationOverlay>
     super.dispose();
   }
 
-  /// 3-phase movement: up → across → down
   Offset _computePosition(double t) {
     final start = widget.startPosition;
     final end = widget.endPosition;
