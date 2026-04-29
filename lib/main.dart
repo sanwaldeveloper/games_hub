@@ -8,9 +8,16 @@ import 'games/chess/game_controller.dart';
 // Ludo
 import 'package:games_hub/games/ludo/injection.dart';
 
-void main() {
+// ✅ FIX: WSStorageService import
+import 'package:games_hub/games/word_search_game/services/ws_storage_service.dart';
+
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   setupDependencyInjection(); // GetIt mein GameProvider register hoga
+
+  // ✅ FIX: SharedPreferences init — bina is ke kuch bhi save nahi hoga
+  await WSStorageService.init();
+
   runApp(const MyApp());
 }
 

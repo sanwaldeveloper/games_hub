@@ -1,0 +1,1031 @@
+[
+  {
+    "subject": "Pak Study",
+    "question": "When did Pakistan gain independence?",
+    "options": ["14 August 1947", "23 March 1940", "14 August 1948", "15 August 1947"],
+    "answer": "14 August 1947",
+    "level": "easy"
+  },
+  {
+    "subject": "Pak Study",
+    "question": "Who is known as the Father of the Nation of Pakistan?",
+    "options": ["Allama Iqbal", "Liaquat Ali Khan", "Quaid-e-Azam Muhammad Ali Jinnah", "Sir Syed Ahmad Khan"],
+    "answer": "Quaid-e-Azam Muhammad Ali Jinnah",
+    "level": "easy"
+  },
+  {
+    "subject": "Pak Study",
+    "question": "What is the capital of Pakistan?",
+    "options": ["Lahore", "Karachi", "Peshawar", "Islamabad"],
+    "answer": "Islamabad",
+    "level": "easy"
+  },
+  {
+    "subject": "Pak Study",
+    "question": "Which mountain is the highest peak in Pakistan?",
+    "options": ["Nanga Parbat", "K2", "Tirich Mir", "Rakaposhi"],
+    "answer": "K2",
+    "level": "easy"
+  },
+  {
+    "subject": "Pak Study",
+    "question": "What is the national language of Pakistan?",
+    "options": ["Punjabi", "Sindhi", "Urdu", "Pashto"],
+    "answer": "Urdu",
+    "level": "easy"
+  },
+  {
+    "subject": "Pak Study",
+    "question": "Which river is the longest river in Pakistan?",
+    "options": ["Chenab", "Jhelum", "Indus", "Ravi"],
+    "answer": "Indus",
+    "level": "easy"
+  },
+  {
+    "subject": "Pak Study",
+    "question": "When was the Lahore Resolution passed?",
+    "options": ["23 March 1940", "14 August 1947", "23 March 1956", "1 July 1948"],
+    "answer": "23 March 1940",
+    "level": "medium"
+  },
+  {
+    "subject": "Pak Study",
+    "question": "Who was the first Prime Minister of Pakistan?",
+    "options": ["Quaid-e-Azam", "Iskander Mirza", "Liaquat Ali Khan", "Khawaja Nazimuddin"],
+    "answer": "Liaquat Ali Khan",
+    "level": "medium"
+  },
+  {
+    "subject": "Pak Study",
+    "question": "What is the national flower of Pakistan?",
+    "options": ["Rose", "Jasmine", "Sunflower", "Lotus"],
+    "answer": "Jasmine",
+    "level": "easy"
+  },
+  {
+    "subject": "Pak Study",
+    "question": "In which year did Pakistan become an Islamic Republic?",
+    "options": ["1947", "1956", "1962", "1973"],
+    "answer": "1956",
+    "level": "medium"
+  },
+  {
+    "subject": "Pak Study",
+    "question": "Which city is known as the City of Gardens?",
+    "options": ["Islamabad", "Karachi", "Lahore", "Multan"],
+    "answer": "Lahore",
+    "level": "easy"
+  },
+  {
+    "subject": "Pak Study",
+    "question": "The Pakistan Resolution was moved by:",
+    "options": ["Quaid-e-Azam", "Allama Iqbal", "Fazlul Haq", "Liaquat Ali Khan"],
+    "answer": "Fazlul Haq",
+    "level": "hard"
+  },
+  {
+    "subject": "Pak Study",
+    "question": "Which desert is located in Sindh?",
+    "options": ["Cholistan", "Thar", "Thal", "Kharan"],
+    "answer": "Thar",
+    "level": "medium"
+  },
+  {
+    "subject": "Pak Study",
+    "question": "How many provinces does Pakistan have?",
+    "options": ["3", "4", "5", "6"],
+    "answer": "4",
+    "level": "easy"
+  },
+  {
+    "subject": "Pak Study",
+    "question": "What does the crescent on Pakistan's flag represent?",
+    "options": ["Peace", "Progress", "Islam", "Unity"],
+    "answer": "Islam",
+    "level": "medium"
+  },
+  {
+    "subject": "Pak Study",
+    "question": "Who wrote the national anthem of Pakistan?",
+    "options": ["Allama Iqbal", "Hafeez Jalandhari", "Faiz Ahmed Faiz", "Josh Malihabadi"],
+    "answer": "Hafeez Jalandhari",
+    "level": "hard"
+  },
+  {
+    "subject": "Pak Study",
+    "question": "Tarbela Dam is built on which river?",
+    "options": ["Jhelum", "Chenab", "Indus", "Kabul"],
+    "answer": "Indus",
+    "level": "medium"
+  },
+  {
+    "subject": "Pak Study",
+    "question": "Which city is the largest by population in Pakistan?",
+    "options": ["Islamabad", "Lahore", "Karachi", "Faisalabad"],
+    "answer": "Karachi",
+    "level": "easy"
+  },
+  {
+    "subject": "Pak Study",
+    "question": "Allama Iqbal's dream was presented in which city?",
+    "options": ["Lahore", "Delhi", "Allahabad", "Lucknow"],
+    "answer": "Allahabad",
+    "level": "hard"
+  },
+  {
+    "subject": "Pak Study",
+    "question": "Which strait separates Pakistan from Oman?",
+    "options": ["Strait of Hormuz", "Strait of Malacca", "Gulf of Aden", "Palk Strait"],
+    "answer": "Strait of Hormuz",
+    "level": "hard"
+  },
+  {
+    "subject": "Pak Study",
+    "question": "Badshahi Mosque is located in which city?",
+    "options": ["Karachi", "Islamabad", "Lahore", "Multan"],
+    "answer": "Lahore",
+    "level": "easy"
+  },
+  {
+    "subject": "Pak Study",
+    "question": "Which country does NOT share a border with Pakistan?",
+    "options": ["India", "Afghanistan", "Iran", "Iraq"],
+    "answer": "Iraq",
+    "level": "medium"
+  },
+  {
+    "subject": "Pak Study",
+    "question": "The Khyber Pass connects Pakistan with which country?",
+    "options": ["India", "China", "Afghanistan", "Iran"],
+    "answer": "Afghanistan",
+    "level": "medium"
+  },
+  {
+    "subject": "Pak Study",
+    "question": "Pakistan's currency is called:",
+    "options": ["Taka", "Rupee", "Dinar", "Riyal"],
+    "answer": "Rupee",
+    "level": "easy"
+  },
+  {
+    "subject": "Pak Study",
+    "question": "Which sea borders Pakistan to the south?",
+    "options": ["Red Sea", "Arabian Sea", "Bay of Bengal", "Caspian Sea"],
+    "answer": "Arabian Sea",
+    "level": "easy"
+  },
+  {
+    "subject": "Pak Study",
+    "question": "Mangla Dam is located on which river?",
+    "options": ["Indus", "Chenab", "Ravi", "Jhelum"],
+    "answer": "Jhelum",
+    "level": "medium"
+  },
+  {
+    "subject": "Pak Study",
+    "question": "The head of state in Pakistan is the:",
+    "options": ["Prime Minister", "President", "Army Chief", "Chief Justice"],
+    "answer": "President",
+    "level": "easy"
+  },
+  {
+    "subject": "Pak Study",
+    "question": "Pakistan became a member of the UN in:",
+    "options": ["1945", "1947", "1948", "1956"],
+    "answer": "1947",
+    "level": "hard"
+  },
+  {
+    "subject": "Pak Study",
+    "question": "Quaid-e-Azam was born on:",
+    "options": ["25 December 1876", "14 August 1947", "23 March 1940", "11 September 1948"],
+    "answer": "25 December 1876",
+    "level": "medium"
+  },
+  {
+    "subject": "Pak Study",
+    "question": "The national bird of Pakistan is:",
+    "options": ["Peacock", "Eagle", "Chakor", "Parrot"],
+    "answer": "Chakor",
+    "level": "medium"
+  },
+  {
+    "subject": "Math",
+    "question": "What is 45 + 37?",
+    "options": ["72", "82", "92", "62"],
+    "answer": "82",
+    "level": "easy"
+  },
+  {
+    "subject": "Math",
+    "question": "What is 123 - 58?",
+    "options": ["55", "65", "75", "85"],
+    "answer": "65",
+    "level": "easy"
+  },
+  {
+    "subject": "Math",
+    "question": "What is 12 × 9?",
+    "options": ["98", "108", "118", "88"],
+    "answer": "108",
+    "level": "easy"
+  },
+  {
+    "subject": "Math",
+    "question": "What is 144 ÷ 12?",
+    "options": ["10", "14", "12", "16"],
+    "answer": "12",
+    "level": "easy"
+  },
+  {
+    "subject": "Math",
+    "question": "What is 256 + 144?",
+    "options": ["390", "400", "410", "420"],
+    "answer": "400",
+    "level": "medium"
+  },
+  {
+    "subject": "Math",
+    "question": "What is 500 - 237?",
+    "options": ["253", "263", "273", "283"],
+    "answer": "263",
+    "level": "medium"
+  },
+  {
+    "subject": "Math",
+    "question": "What is 15 × 15?",
+    "options": ["205", "215", "225", "235"],
+    "answer": "225",
+    "level": "medium"
+  },
+  {
+    "subject": "Math",
+    "question": "What is 360 ÷ 9?",
+    "options": ["35", "40", "45", "50"],
+    "answer": "40",
+    "level": "easy"
+  },
+  {
+    "subject": "Math",
+    "question": "What is 789 + 211?",
+    "options": ["900", "1000", "1100", "990"],
+    "answer": "1000",
+    "level": "medium"
+  },
+  {
+    "subject": "Math",
+    "question": "What is 1000 - 456?",
+    "options": ["534", "544", "554", "564"],
+    "answer": "544",
+    "level": "medium"
+  },
+  {
+    "subject": "Math",
+    "question": "What is 25 × 4?",
+    "options": ["90", "95", "100", "105"],
+    "answer": "100",
+    "level": "easy"
+  },
+  {
+    "subject": "Math",
+    "question": "What is 250 ÷ 5?",
+    "options": ["40", "45", "50", "55"],
+    "answer": "50",
+    "level": "easy"
+  },
+  {
+    "subject": "Math",
+    "question": "What is 67 + 85?",
+    "options": ["142", "152", "162", "132"],
+    "answer": "152",
+    "level": "medium"
+  },
+  {
+    "subject": "Math",
+    "question": "What is 300 - 175?",
+    "options": ["115", "125", "135", "145"],
+    "answer": "125",
+    "level": "medium"
+  },
+  {
+    "subject": "Math",
+    "question": "What is 11 × 13?",
+    "options": ["133", "143", "153", "123"],
+    "answer": "143",
+    "level": "medium"
+  },
+  {
+    "subject": "Math",
+    "question": "What is 576 ÷ 24?",
+    "options": ["20", "22", "24", "26"],
+    "answer": "24",
+    "level": "hard"
+  },
+  {
+    "subject": "Math",
+    "question": "What is 999 + 1?",
+    "options": ["999", "1000", "1001", "1010"],
+    "answer": "1000",
+    "level": "easy"
+  },
+  {
+    "subject": "Math",
+    "question": "What is 7 × 8?",
+    "options": ["54", "56", "58", "60"],
+    "answer": "56",
+    "level": "easy"
+  },
+  {
+    "subject": "Math",
+    "question": "What is 200 ÷ 8?",
+    "options": ["20", "22", "25", "30"],
+    "answer": "25",
+    "level": "medium"
+  },
+  {
+    "subject": "Math",
+    "question": "What is 48 + 76?",
+    "options": ["114", "124", "134", "104"],
+    "answer": "124",
+    "level": "easy"
+  },
+  {
+    "subject": "Math",
+    "question": "What is 450 - 299?",
+    "options": ["141", "151", "161", "171"],
+    "answer": "151",
+    "level": "medium"
+  },
+  {
+    "subject": "Math",
+    "question": "What is 17 × 6?",
+    "options": ["92", "102", "112", "82"],
+    "answer": "102",
+    "level": "medium"
+  },
+  {
+    "subject": "Math",
+    "question": "What is 420 ÷ 7?",
+    "options": ["55", "60", "65", "70"],
+    "answer": "60",
+    "level": "easy"
+  },
+  {
+    "subject": "Math",
+    "question": "What is 365 + 635?",
+    "options": ["990", "995", "1000", "1005"],
+    "answer": "1000",
+    "level": "medium"
+  },
+  {
+    "subject": "Math",
+    "question": "What is 800 - 350?",
+    "options": ["440", "450", "460", "470"],
+    "answer": "450",
+    "level": "easy"
+  },
+  {
+    "subject": "Math",
+    "question": "What is 14 × 14?",
+    "options": ["176", "186", "196", "206"],
+    "answer": "196",
+    "level": "hard"
+  },
+  {
+    "subject": "Math",
+    "question": "What is 960 ÷ 32?",
+    "options": ["25", "30", "35", "40"],
+    "answer": "30",
+    "level": "hard"
+  },
+  {
+    "subject": "Math",
+    "question": "What is 625 + 375?",
+    "options": ["990", "1000", "1010", "1020"],
+    "answer": "1000",
+    "level": "medium"
+  },
+  {
+    "subject": "Math",
+    "question": "What is 1200 - 750?",
+    "options": ["440", "450", "460", "470"],
+    "answer": "450",
+    "level": "medium"
+  },
+  {
+    "subject": "Math",
+    "question": "What is 9 × 9?",
+    "options": ["72", "81", "90", "63"],
+    "answer": "81",
+    "level": "easy"
+  },
+  {
+    "subject": "Urdu",
+    "question": "اردو کا قومی شاعر کون ہے؟",
+    "options": ["فیض احمد فیض", "علامہ اقبال", "مرزا غالب", "احمد فراز"],
+    "answer": "علامہ اقبال",
+    "level": "easy"
+  },
+  {
+    "subject": "Urdu",
+    "question": "پاکستان کی قومی زبان کون سی ہے؟",
+    "options": ["پنجابی", "سندھی", "اردو", "پشتو"],
+    "answer": "اردو",
+    "level": "easy"
+  },
+  {
+    "subject": "Urdu",
+    "question": "اردو کا پہلا ناول کون سا ہے؟",
+    "options": ["توبۃ النصوح", "فسانہ آزاد", "امراؤ جان ادا", "مراۃ العروس"],
+    "answer": "مراۃ العروس",
+    "level": "hard"
+  },
+  {
+    "subject": "Urdu",
+    "question": "مرزا غالب کا اصل نام کیا تھا؟",
+    "options": ["اسداللہ خان", "محمود خان", "احمد خان", "غالب خان"],
+    "answer": "اسداللہ خان",
+    "level": "medium"
+  },
+  {
+    "subject": "Urdu",
+    "question": "علامہ اقبال کی مشہور نظم کون سی ہے؟",
+    "options": ["شکوہ", "گل رنگ", "نغمہ", "صبا"],
+    "answer": "شکوہ",
+    "level": "easy"
+  },
+  {
+    "subject": "Urdu",
+    "question": "اردو ادب میں 'سودا' کا کیا مقام ہے؟",
+    "options": ["ناول نگار", "شاعر", "افسانہ نگار", "ڈراما نگار"],
+    "answer": "شاعر",
+    "level": "medium"
+  },
+  {
+    "subject": "Urdu",
+    "question": "فیض احمد فیض کس شہر سے تعلق رکھتے تھے؟",
+    "options": ["لاہور", "کراچی", "سیالکوٹ", "ملتان"],
+    "answer": "سیالکوٹ",
+    "level": "medium"
+  },
+  {
+    "subject": "Urdu",
+    "question": "اردو میں حرف علت کتنے ہوتے ہیں؟",
+    "options": ["2", "3", "4", "5"],
+    "answer": "3",
+    "level": "medium"
+  },
+  {
+    "subject": "Urdu",
+    "question": "اردو کا سب سے پہلا اخبار کون سا تھا؟",
+    "options": ["جنگ", "جام جہاں نما", "نوائے وقت", "ڈان"],
+    "answer": "جام جہاں نما",
+    "level": "hard"
+  },
+  {
+    "subject": "Urdu",
+    "question": "احمد فراز کا اصل نام کیا تھا؟",
+    "options": ["سید احمد شاہ", "محمد فراز", "احمد خان", "فراز حسین"],
+    "answer": "سید احمد شاہ",
+    "level": "hard"
+  },
+  {
+    "subject": "Urdu",
+    "question": "اردو زبان میں حروف تہجی کتنے ہیں؟",
+    "options": ["36", "52", "26", "38"],
+    "answer": "52",
+    "level": "medium"
+  },
+  {
+    "subject": "Urdu",
+    "question": "'لب پر آتی ہے دعا بن کے تمنا میری' کس نے لکھا؟",
+    "options": ["فیض", "غالب", "اقبال", "فراز"],
+    "answer": "اقبال",
+    "level": "medium"
+  },
+  {
+    "subject": "Urdu",
+    "question": "اردو کا پہلا لغت کس نے لکھی؟",
+    "options": ["سرسید", "غالب", "میر امن", "انشاء اللہ خان"],
+    "answer": "انشاء اللہ خان",
+    "level": "hard"
+  },
+  {
+    "subject": "Urdu",
+    "question": "اردو نثر کے باپ کون ہیں؟",
+    "options": ["سر سید احمد خان", "میر امن", "رتن ناتھ سرشار", "ڈپٹی نذیر احمد"],
+    "answer": "سر سید احمد خان",
+    "level": "medium"
+  },
+  {
+    "subject": "Urdu",
+    "question": "علامہ اقبال نے کس یونیورسٹی سے پی ایچ ڈی کی؟",
+    "options": ["آکسفورڈ", "کیمبرج", "میونخ", "ہارورڈ"],
+    "answer": "میونخ",
+    "level": "hard"
+  },
+  {
+    "subject": "Urdu",
+    "question": "مرزا غالب کا مزار کہاں ہے؟",
+    "options": ["لاہور", "دہلی", "کراچی", "لکھنؤ"],
+    "answer": "دہلی",
+    "level": "medium"
+  },
+  {
+    "subject": "Urdu",
+    "question": "'شکوہ' کے جواب میں اقبال نے کیا لکھا؟",
+    "options": ["جواب شکوہ", "شکوہ دوم", "پیام مشرق", "بانگ درا"],
+    "answer": "جواب شکوہ",
+    "level": "easy"
+  },
+  {
+    "subject": "Urdu",
+    "question": "اردو زبان کا گہوارہ کسے کہا جاتا ہے؟",
+    "options": ["لاہور", "دہلی", "دکن", "لکھنؤ"],
+    "answer": "دکن",
+    "level": "hard"
+  },
+  {
+    "subject": "Urdu",
+    "question": "بانگ درا کس کی کتاب ہے؟",
+    "options": ["فیض", "غالب", "اقبال", "فراز"],
+    "answer": "اقبال",
+    "level": "easy"
+  },
+  {
+    "subject": "Urdu",
+    "question": "اردو میں اعراب کتنے ہوتے ہیں؟",
+    "options": ["5", "6", "7", "8"],
+    "answer": "7",
+    "level": "hard"
+  },
+  {
+    "subject": "Urdu",
+    "question": "جون ایلیا کا تعلق کس شہر سے تھا؟",
+    "options": ["کراچی", "لاہور", "امروہہ", "دہلی"],
+    "answer": "امروہہ",
+    "level": "hard"
+  },
+  {
+    "subject": "Urdu",
+    "question": "ٹیپو سلطان کا مشہور قول کیا ہے؟",
+    "options": ["شیر کی ایک دن کی زندگی گیدڑ کی سو سالہ زندگی سے بہتر ہے", "جیت تمہاری ہے", "جرأت پر قائم رہو", "فتح قریب ہے"],
+    "answer": "شیر کی ایک دن کی زندگی گیدڑ کی سو سالہ زندگی سے بہتر ہے",
+    "level": "medium"
+  },
+  {
+    "subject": "Urdu",
+    "question": "اردو کے مشہور ڈراما نگار کون ہیں؟",
+    "options": ["منٹو", "عصمت چغتائی", "سعادت حسن منٹو", "حسینہ معین"],
+    "answer": "حسینہ معین",
+    "level": "medium"
+  },
+  {
+    "subject": "Urdu",
+    "question": "منٹو کا پورا نام کیا ہے؟",
+    "options": ["سعادت حسن منٹو", "سعد منٹو", "حسن منٹو", "محمد منٹو"],
+    "answer": "سعادت حسن منٹو",
+    "level": "medium"
+  },
+  {
+    "subject": "Urdu",
+    "question": "اردو کا مشہور افسانہ 'ٹوبہ ٹیک سنگھ' کس نے لکھا؟",
+    "options": ["فیض", "منٹو", "عصمت", "احمد فراز"],
+    "answer": "منٹو",
+    "level": "medium"
+  },
+  {
+    "subject": "Urdu",
+    "question": "اردو شاعری میں 'غزل' کی کیا خصوصیت ہے؟",
+    "options": ["لمبی نظم", "ہر شعر مکمل ہوتا ہے", "صرف مذہبی موضوع", "صرف قصیدہ"],
+    "answer": "ہر شعر مکمل ہوتا ہے",
+    "level": "medium"
+  },
+  {
+    "subject": "English",
+    "question": "What is the synonym of 'Happy'?",
+    "options": ["Sad", "Joyful", "Angry", "Worried"],
+    "answer": "Joyful",
+    "level": "easy"
+  },
+  {
+    "subject": "English",
+    "question": "What is the antonym of 'Hot'?",
+    "options": ["Warm", "Boiling", "Cold", "Mild"],
+    "answer": "Cold",
+    "level": "easy"
+  },
+  {
+    "subject": "English",
+    "question": "Which of the following is a noun?",
+    "options": ["Run", "Beautiful", "Happiness", "Quickly"],
+    "answer": "Happiness",
+    "level": "easy"
+  },
+  {
+    "subject": "English",
+    "question": "Choose the correct sentence:",
+    "options": ["She go to school.", "She goes to school.", "She going to school.", "She gone to school."],
+    "answer": "She goes to school.",
+    "level": "easy"
+  },
+  {
+    "subject": "English",
+    "question": "What is the plural of 'Child'?",
+    "options": ["Childs", "Childes", "Children", "Childrens"],
+    "answer": "Children",
+    "level": "easy"
+  },
+  {
+    "subject": "English",
+    "question": "The meaning of 'Benevolent' is:",
+    "options": ["Cruel", "Kind and generous", "Angry", "Selfish"],
+    "answer": "Kind and generous",
+    "level": "medium"
+  },
+  {
+    "subject": "English",
+    "question": "Which sentence is in the past tense?",
+    "options": ["I eat rice.", "I am eating rice.", "I ate rice.", "I will eat rice."],
+    "answer": "I ate rice.",
+    "level": "easy"
+  },
+  {
+    "subject": "English",
+    "question": "What is the adjective in the sentence: 'The beautiful flower bloomed'?",
+    "options": ["flower", "bloomed", "The", "beautiful"],
+    "answer": "beautiful",
+    "level": "easy"
+  },
+  {
+    "subject": "English",
+    "question": "Which word is a conjunction?",
+    "options": ["run", "and", "blue", "quickly"],
+    "answer": "and",
+    "level": "easy"
+  },
+  {
+    "subject": "English",
+    "question": "What does 'Abundant' mean?",
+    "options": ["Scarce", "Plentiful", "Empty", "Rare"],
+    "answer": "Plentiful",
+    "level": "medium"
+  },
+  {
+    "subject": "English",
+    "question": "Which is the correct spelling?",
+    "options": ["Recieve", "Receive", "Receve", "Receeve"],
+    "answer": "Receive",
+    "level": "medium"
+  },
+  {
+    "subject": "English",
+    "question": "What type of word is 'Slowly'?",
+    "options": ["Noun", "Verb", "Adverb", "Adjective"],
+    "answer": "Adverb",
+    "level": "easy"
+  },
+  {
+    "subject": "English",
+    "question": "Choose the passive voice: 'The cat chased the mouse.'",
+    "options": ["The mouse was chased by the cat.", "The cat is chasing the mouse.", "The mouse chased the cat.", "The cat had chased the mouse."],
+    "answer": "The mouse was chased by the cat.",
+    "level": "medium"
+  },
+  {
+    "subject": "English",
+    "question": "The word 'Enormous' means:",
+    "options": ["Tiny", "Very large", "Average", "Narrow"],
+    "answer": "Very large",
+    "level": "easy"
+  },
+  {
+    "subject": "English",
+    "question": "Which sentence uses correct punctuation?",
+    "options": ["Its raining outside.", "It's raining outside.", "Its' raining outside.", "Its raining, outside."],
+    "answer": "It's raining outside.",
+    "level": "medium"
+  },
+  {
+    "subject": "English",
+    "question": "Choose the correct preposition: 'She is good ___ mathematics.'",
+    "options": ["in", "at", "on", "for"],
+    "answer": "at",
+    "level": "medium"
+  },
+  {
+    "subject": "English",
+    "question": "What is the comparative form of 'Good'?",
+    "options": ["Gooder", "More good", "Better", "Best"],
+    "answer": "Better",
+    "level": "easy"
+  },
+  {
+    "subject": "English",
+    "question": "Which word is a pronoun?",
+    "options": ["Table", "She", "Run", "Big"],
+    "answer": "She",
+    "level": "easy"
+  },
+  {
+    "subject": "English",
+    "question": "What is the opposite of 'Ancient'?",
+    "options": ["Old", "Modern", "Classic", "Vintage"],
+    "answer": "Modern",
+    "level": "easy"
+  },
+  {
+    "subject": "English",
+    "question": "A group of fish is called a:",
+    "options": ["Pack", "Herd", "School", "Flock"],
+    "answer": "School",
+    "level": "medium"
+  },
+  {
+    "subject": "English",
+    "question": "Choose the correct article: '___ apple a day keeps the doctor away.'",
+    "options": ["A", "An", "The", "No article"],
+    "answer": "An",
+    "level": "easy"
+  },
+  {
+    "subject": "English",
+    "question": "What is a simile?",
+    "options": ["Comparing using 'is'", "Comparing using 'like' or 'as'", "Giving life to objects", "A type of rhyme"],
+    "answer": "Comparing using 'like' or 'as'",
+    "level": "medium"
+  },
+  {
+    "subject": "English",
+    "question": "The meaning of 'Persevere' is:",
+    "options": ["Give up", "Continue despite difficulty", "Start over", "Remain silent"],
+    "answer": "Continue despite difficulty",
+    "level": "hard"
+  },
+  {
+    "subject": "English",
+    "question": "Which is NOT a vowel?",
+    "options": ["A", "E", "B", "O"],
+    "answer": "B",
+    "level": "easy"
+  },
+  {
+    "subject": "English",
+    "question": "What does the prefix 'Un-' mean?",
+    "options": ["Again", "Not", "Before", "After"],
+    "answer": "Not",
+    "level": "easy"
+  },
+  {
+    "subject": "English",
+    "question": "Choose the correct form: 'He ___ to school every day.'",
+    "options": ["go", "goes", "going", "gone"],
+    "answer": "goes",
+    "level": "easy"
+  },
+  {
+    "subject": "English",
+    "question": "What figure of speech is 'The wind whispered through the trees'?",
+    "options": ["Simile", "Metaphor", "Personification", "Alliteration"],
+    "answer": "Personification",
+    "level": "hard"
+  },
+  {
+    "subject": "English",
+    "question": "What is the superlative of 'Bad'?",
+    "options": ["Worse", "Worst", "More bad", "Most bad"],
+    "answer": "Worst",
+    "level": "medium"
+  },
+  {
+    "subject": "English",
+    "question": "The word 'Vocabulary' means:",
+    "options": ["Grammar rules", "A collection of words", "Pronunciation guide", "Sentence structure"],
+    "answer": "A collection of words",
+    "level": "easy"
+  },
+  {
+    "subject": "English",
+    "question": "What is an antonym of 'Brave'?",
+    "options": ["Bold", "Fearless", "Cowardly", "Strong"],
+    "answer": "Cowardly",
+    "level": "easy"
+  },
+  {
+    "subject": "General Science",
+    "question": "What is the chemical formula of water?",
+    "options": ["H2O2", "HO", "H2O", "H3O"],
+    "answer": "H2O",
+    "level": "easy"
+  },
+  {
+    "subject": "General Science",
+    "question": "How many planets are there in our solar system?",
+    "options": ["7", "8", "9", "10"],
+    "answer": "8",
+    "level": "easy"
+  },
+  {
+    "subject": "General Science",
+    "question": "What is the closest planet to the Sun?",
+    "options": ["Venus", "Earth", "Mars", "Mercury"],
+    "answer": "Mercury",
+    "level": "easy"
+  },
+  {
+    "subject": "General Science",
+    "question": "What is the largest organ in the human body?",
+    "options": ["Heart", "Liver", "Skin", "Brain"],
+    "answer": "Skin",
+    "level": "medium"
+  },
+  {
+    "subject": "General Science",
+    "question": "What gas do plants absorb during photosynthesis?",
+    "options": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
+    "answer": "Carbon Dioxide",
+    "level": "easy"
+  },
+  {
+    "subject": "General Science",
+    "question": "The speed of light is approximately:",
+    "options": ["300,000 km/s", "150,000 km/s", "30,000 km/s", "3,000,000 km/s"],
+    "answer": "300,000 km/s",
+    "level": "medium"
+  },
+  {
+    "subject": "General Science",
+    "question": "What is the powerhouse of the cell?",
+    "options": ["Nucleus", "Ribosome", "Mitochondria", "Chloroplast"],
+    "answer": "Mitochondria",
+    "level": "medium"
+  },
+  {
+    "subject": "General Science",
+    "question": "What is the boiling point of water?",
+    "options": ["90°C", "95°C", "100°C", "105°C"],
+    "answer": "100°C",
+    "level": "easy"
+  },
+  {
+    "subject": "General Science",
+    "question": "How many bones are in the adult human body?",
+    "options": ["186", "206", "226", "246"],
+    "answer": "206",
+    "level": "medium"
+  },
+  {
+    "subject": "General Science",
+    "question": "What is the chemical symbol for Gold?",
+    "options": ["Go", "Gd", "Au", "Ag"],
+    "answer": "Au",
+    "level": "medium"
+  },
+  {
+    "subject": "General Science",
+    "question": "Which planet is known as the Red Planet?",
+    "options": ["Venus", "Jupiter", "Saturn", "Mars"],
+    "answer": "Mars",
+    "level": "easy"
+  },
+  {
+    "subject": "General Science",
+    "question": "What force keeps planets in orbit around the Sun?",
+    "options": ["Magnetic force", "Gravity", "Electric force", "Nuclear force"],
+    "answer": "Gravity",
+    "level": "easy"
+  },
+  {
+    "subject": "General Science",
+    "question": "Which part of the plant conducts photosynthesis?",
+    "options": ["Root", "Stem", "Leaf", "Flower"],
+    "answer": "Leaf",
+    "level": "easy"
+  },
+  {
+    "subject": "General Science",
+    "question": "What is the most abundant gas in Earth's atmosphere?",
+    "options": ["Oxygen", "Carbon Dioxide", "Hydrogen", "Nitrogen"],
+    "answer": "Nitrogen",
+    "level": "medium"
+  },
+  {
+    "subject": "General Science",
+    "question": "Sound travels fastest through:",
+    "options": ["Air", "Water", "Vacuum", "Solid"],
+    "answer": "Solid",
+    "level": "hard"
+  },
+  {
+    "subject": "General Science",
+    "question": "What is the center of an atom called?",
+    "options": ["Electron", "Proton", "Nucleus", "Neutron"],
+    "answer": "Nucleus",
+    "level": "medium"
+  },
+  {
+    "subject": "General Science",
+    "question": "Which vitamin is produced when skin is exposed to sunlight?",
+    "options": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
+    "answer": "Vitamin D",
+    "level": "medium"
+  },
+  {
+    "subject": "General Science",
+    "question": "What is the process by which water changes from liquid to gas?",
+    "options": ["Condensation", "Evaporation", "Precipitation", "Sublimation"],
+    "answer": "Evaporation",
+    "level": "easy"
+  },
+  {
+    "subject": "General Science",
+    "question": "The human heart has how many chambers?",
+    "options": ["2", "3", "4", "5"],
+    "answer": "4",
+    "level": "easy"
+  },
+  {
+    "subject": "General Science",
+    "question": "Which is the smallest planet in our solar system?",
+    "options": ["Mars", "Mercury", "Venus", "Pluto"],
+    "answer": "Mercury",
+    "level": "medium"
+  },
+  {
+    "subject": "General Science",
+    "question": "What is the unit of electric current?",
+    "options": ["Volt", "Ohm", "Watt", "Ampere"],
+    "answer": "Ampere",
+    "level": "medium"
+  },
+  {
+    "subject": "General Science",
+    "question": "Which blood type is the universal donor?",
+    "options": ["A", "B", "AB", "O"],
+    "answer": "O",
+    "level": "hard"
+  },
+  {
+    "subject": "General Science",
+    "question": "DNA stands for:",
+    "options": ["Deoxyribose Nucleic Acid", "Deoxyribonucleic Acid", "Diribonucleic Acid", "Deoxyribonucleotide Acid"],
+    "answer": "Deoxyribonucleic Acid",
+    "level": "hard"
+  },
+  {
+    "subject": "General Science",
+    "question": "Which planet has the most moons?",
+    "options": ["Jupiter", "Saturn", "Uranus", "Neptune"],
+    "answer": "Saturn",
+    "level": "hard"
+  },
+  {
+    "subject": "General Science",
+    "question": "What is the chemical symbol for Iron?",
+    "options": ["Ir", "In", "Fe", "Io"],
+    "answer": "Fe",
+    "level": "medium"
+  },
+  {
+    "subject": "General Science",
+    "question": "How long does it take for Earth to complete one revolution around the Sun?",
+    "options": ["24 hours", "30 days", "365 days", "12 months"],
+    "answer": "365 days",
+    "level": "easy"
+  },
+  {
+    "subject": "General Science",
+    "question": "What is the hardest natural substance?",
+    "options": ["Gold", "Iron", "Diamond", "Platinum"],
+    "answer": "Diamond",
+    "level": "easy"
+  },
+  {
+    "subject": "General Science",
+    "question": "What type of energy does the Sun provide?",
+    "options": ["Nuclear energy", "Solar energy", "Chemical energy", "Electrical energy"],
+    "answer": "Solar energy",
+    "level": "easy"
+  },
+  {
+    "subject": "General Science",
+    "question": "Which organ filters blood in the human body?",
+    "options": ["Heart", "Liver", "Kidney", "Lungs"],
+    "answer": "Kidney",
+    "level": "easy"
+  },
+  {
+    "subject": "General Science",
+    "question": "What is the pH of pure water?",
+    "options": ["5", "6", "7", "8"],
+    "answer": "7",
+    "level": "medium"
+  },
+  {
+    "subject": "General Science",
+    "question": "Newton's first law of motion is also called:",
+    "options": ["Law of Acceleration", "Law of Inertia", "Law of Action", "Law of Gravity"],
+    "answer": "Law of Inertia",
+    "level": "medium"
+  }
+]

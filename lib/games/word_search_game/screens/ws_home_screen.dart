@@ -111,7 +111,7 @@ class WordSearchHome extends StatelessWidget {
 
                   const SizedBox(height: 28),
 
-                  // ✅ FIX 1: Play Levels button — pass provider into WSLevelSelectScreen
+                  // Play Levels button
                   _BigButton(
                     label: 'Play Levels',
                     icon: Icons.grid_view_rounded,
@@ -132,10 +132,11 @@ class WordSearchHome extends StatelessWidget {
 
                   const SizedBox(height: 14),
 
-                  // ✅ FIX 2: Daily Challenge button — load level then pass provider into WSGameScreen
+                  // Daily Challenge button
                   _BigButton(
-                    label:
-                        'Daily Challenge  ${WSStorageService.isDailyChallengeCompleted() ? "✅" : "🌟"}',
+                    label: WSStorageService.isDailyChallengeCompleted()
+                        ? 'Daily Challenge ✅'
+                        : 'Daily Challenge 🌟',
                     icon: Icons.today_rounded,
                     colors: const [WSTheme.success, Color(0xFF00BCD4)],
                     onTap: () {
@@ -164,7 +165,6 @@ class WordSearchHome extends StatelessWidget {
   }
 }
 
-// _StatsCard, _Stat, _BigButton unchanged below...
 class _StatsCard extends StatelessWidget {
   final WSGameProvider gp;
   const _StatsCard({required this.gp});
@@ -240,10 +240,16 @@ class _BigButton extends StatelessWidget {
         child: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
           Icon(icon, color: Colors.white, size: 22),
           const SizedBox(width: 10),
-          Text(label,
+          // ✅ FIX: Flexible wrap — overflow rokne ke liye
+          Flexible(
+            child: Text(
+              label,
               style: const TextStyle(
                   color: Colors.white, fontSize: 17,
-                  fontWeight: FontWeight.w700)),
+                  fontWeight: FontWeight.w700),
+              overflow: TextOverflow.ellipsis,
+            ),
+          ),
         ]),
       ),
     );

@@ -12,6 +12,8 @@ extension ResponsiveExtension on num {
   double get h => ((this * _width) / figmaDesignWidth);
   double get v => (this * _height) / (figmaDesignHeight - figmaDesignStatusBar);
 
+  double get w => h;
+
   double get adaptSize {
     var height = v;
     var width = h;
@@ -40,9 +42,31 @@ typedef ResponsiveBuild =
       DeviceType deviceType,
     );
 
-class Sizer extends StatelessWidget {
+class Sizer extends StatefulWidget {
   const Sizer({super.key, required this.builder});
   final ResponsiveBuild builder;
+
+  @override
+  State<Sizer> createState() => _SizerState();
+}
+
+class _SizerState extends State<Sizer> with WidgetsBindingObserver {
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addObserver(this);
+  }
+
+  @override
+  void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
+    super.dispose();
+  }
+
+  @override
+  void didChangeMetrics() {
+    if (mounted) setState(() {});
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -51,7 +75,7 @@ class Sizer extends StatelessWidget {
         return OrientationBuilder(
           builder: (context, orientation) {
             SizeUtils.setScreenSize(constraints, orientation);
-            return builder(context, orientation, SizeUtils.deviceType);
+            return widget.builder(context, orientation, SizeUtils.deviceType);
           },
         );
       },
@@ -60,7 +84,6 @@ class Sizer extends StatelessWidget {
 }
 
 class SizeUtils {
-  // Initialize with default values instead of late
   static BoxConstraints boxConstraints = const BoxConstraints();
   static Orientation orientation = Orientation.portrait;
   static DeviceType deviceType = DeviceType.mobile;
@@ -92,13 +115,15 @@ class SizeUtils {
 }
 
 class Gap {
-  // For horizontal spacing (width)
   static SizedBox h(double value) {
     return SizedBox(width: value.h);
   }
 
-  // For vertical spacing (height)
   static SizedBox v(double value) {
     return SizedBox(height: value.v);
   }
+}
+
+extension BorderRadiusExtension on num {
+  BorderRadius get r => BorderRadius.circular(toDouble());
 }

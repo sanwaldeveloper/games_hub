@@ -80,6 +80,9 @@ class _SpeedSelectionScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(leading: IconButton(onPressed: (){
+        Navigator.pop(context);
+      }, icon: Icon(Icons.arrow_back)),),
       backgroundColor: const Color(0xFF1a1a2e),
       body: Center(
         child: Padding(

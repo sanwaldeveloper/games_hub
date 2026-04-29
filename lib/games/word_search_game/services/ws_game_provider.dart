@@ -171,15 +171,24 @@ class WSGameProvider extends ChangeNotifier {
   void _onLevelComplete() {
     _timer?.cancel();
     _showConfetti = true;
+
     if (_currentLevel != null) {
+      // ✅ FIX: pehle storage mein save karo
       WSStorageService.markLevelComplete(_currentLevel!.id);
       WSStorageService.saveScore(_currentLevel!.id, _gameState!.score);
+
+      // ✅ FIX: local state update karo storage se fresh data le kar
       _completedLevels = WSStorageService.getCompletedLevels();
       _levelScores = WSStorageService.getAllScores();
+
       if (_currentLevel!.id == 99) {
         WSStorageService.markDailyChallengeComplete();
       }
     }
+
+    // ✅ FIX: notifyListeners() call karo taake WSLevelSelectScreen
+    //         ko pata chale ke naya level unlock ho gaya
+    notifyListeners();
   }
 
   void resetConfetti() {

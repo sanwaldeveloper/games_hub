@@ -1,7 +1,7 @@
 import 'ball_model.dart';
 
 class TubeModel {
-  final List<BallModel> balls;
+  final List<BallModel> balls; // index 0 = BOTTOM, last index = TOP
   final int capacity;
 
   const TubeModel({
@@ -13,8 +13,10 @@ class TubeModel {
   bool get isFull => balls.length >= capacity;
   int get ballCount => balls.length;
 
+  // ✅ TOP ball = last element (jo sabse upar hai)
   BallModel? get topBall => balls.isEmpty ? null : balls.last;
 
+  // ✅ Sorted = sab same color AND full
   bool get isSorted {
     if (balls.isEmpty) return true;
     if (balls.length != capacity) return false;
@@ -22,16 +24,16 @@ class TubeModel {
     return balls.every((b) => b.colorIndex == firstColor);
   }
 
-  /// A tube is LOCKED only when it is fully sorted (all same color, full).
-  /// Mixed-color full tubes can still have their top ball removed.
   bool get isLocked => isSorted && isFull;
 
+  // ✅ Top se accept karta hai — sirf top ball ka color match ho
   bool canAccept(BallModel ball) {
     if (isFull) return false;
     if (isEmpty) return true;
     return topBall!.colorIndex == ball.colorIndex;
   }
 
+  // ✅ Ball top pe add hota hai (last index)
   TubeModel withBallAdded(BallModel ball) {
     return TubeModel(
       balls: [...balls, ball],
@@ -39,6 +41,7 @@ class TubeModel {
     );
   }
 
+  // ✅ Top ball remove hota hai (last index)
   TubeModel withTopBallRemoved() {
     if (balls.isEmpty) return this;
     return TubeModel(

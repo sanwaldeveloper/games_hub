@@ -158,31 +158,49 @@ class _WSLevelCompleteScreenState extends State<WSLevelCompleteScreen> {
 
               const SizedBox(height: 28),
 
-              // Next level button
+              // ✅ FIX: Next Level — provider pass karo
               if (next != null)
                 _ActionBtn(
                   label: 'Next Level  →',
                   color: WSTheme.primary,
                   onTap: () {
-                    gp.loadLevel(next);
-                    Navigator.pushReplacement(context,
-                        MaterialPageRoute(builder: (_) => const WSGameScreen()));
+                    final provider = context.read<WSGameProvider>();
+                    provider.loadLevel(next);
+                    Navigator.pushReplacement(
+                      context,
+                      MaterialPageRoute(
+                        builder: (_) => ChangeNotifierProvider.value(
+                          value: provider,
+                          child: const WSGameScreen(),
+                        ),
+                      ),
+                    );
                   },
                 ),
 
               if (next != null) const SizedBox(height: 12),
 
               Row(children: [
+                // ✅ FIX: Replay — provider pass karo
                 Expanded(child: _ActionBtn(
                   label: 'Replay',
                   color: WSTheme.warning,
                   onTap: () {
-                    gp.loadLevel(level);
-                    Navigator.pushReplacement(context,
-                        MaterialPageRoute(builder: (_) => const WSGameScreen()));
+                    final provider = context.read<WSGameProvider>();
+                    provider.loadLevel(level);
+                    Navigator.pushReplacement(
+                      context,
+                      MaterialPageRoute(
+                        builder: (_) => ChangeNotifierProvider.value(
+                          value: provider,
+                          child: const WSGameScreen(),
+                        ),
+                      ),
+                    );
                   },
                 )),
                 const SizedBox(width: 12),
+                // Menu — popUntil theek hai, koi fix nahi chahiye
                 Expanded(child: _ActionBtn(
                   label: 'Menu',
                   color: WSTheme.accent,

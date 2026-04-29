@@ -4,8 +4,8 @@ import '../models/ball_model.dart';
 
 class BallArcAnimationOverlay extends StatefulWidget {
   final BallModel ball;
-  final Offset startPosition; // top-center of source tube opening
-  final Offset endPosition;   // top-center of target tube opening
+  final Offset startPosition;
+  final Offset endPosition;
   final VoidCallback onComplete;
 
   const BallArcAnimationOverlay({
@@ -20,7 +20,7 @@ class BallArcAnimationOverlay extends StatefulWidget {
   State<BallArcAnimationOverlay> createState() =>
       _BallArcAnimationOverlayState();
 }
-   
+
 class _BallArcAnimationOverlayState extends State<BallArcAnimationOverlay>
     with SingleTickerProviderStateMixin {
   late AnimationController _ctrl;
@@ -36,7 +36,6 @@ class _BallArcAnimationOverlayState extends State<BallArcAnimationOverlay>
     _ctrl.addListener(() {
       final pos = _computePosition(_ctrl.value);
       _trail.add(_TrailPoint(pos, _ctrl.value));
-      // Keep only recent trail points
       while (_trail.length > 12) _trail.removeAt(0);
       setState(() {});
     });
@@ -50,27 +49,29 @@ class _BallArcAnimationOverlayState extends State<BallArcAnimationOverlay>
   }
 
   Offset _computePosition(double t) {
+    // ✅ FIX: t ko [0.0, 1.0] ke andar clamp karo — floating point error se crash hota tha
+    t = t.clamp(0.0, 1.0);
+
     final start = widget.startPosition;
     final end = widget.endPosition;
-    // How high above tubes the ball travels
     final double peakY = math.min(start.dy, end.dy) - 70;
 
     if (t <= 0.3) {
-      // Phase 1: straight up from start
-      final p = t / 0.3;
+      // Phase 1: upar
+      final p = (t / 0.3).clamp(0.0, 1.0);
       final easedP = Curves.easeOut.transform(p);
       return Offset(start.dx, start.dy + (peakY - start.dy) * easedP);
     } else if (t <= 0.7) {
-      // Phase 2: horizontal move at peak height
-      final p = (t - 0.3) / 0.4;
+      // Phase 2: horizontal
+      final p = ((t - 0.3) / 0.4).clamp(0.0, 1.0);
       final easedP = Curves.easeInOut.transform(p);
       return Offset(
         start.dx + (end.dx - start.dx) * easedP,
         peakY,
       );
     } else {
-      // Phase 3: straight down into target
-      final p = (t - 0.7) / 0.3;
+      // Phase 3: neeche
+      final p = ((t - 0.7) / 0.3).clamp(0.0, 1.0);
       final easedP = Curves.easeIn.transform(p);
       return Offset(end.dx, peakY + (end.dy - peakY) * easedP);
     }
@@ -79,13 +80,12 @@ class _BallArcAnimationOverlayState extends State<BallArcAnimationOverlay>
   @override
   Widget build(BuildContext context) {
     final color = kBallColors[widget.ball.colorIndex % kBallColors.length];
-    final double ballSize = 36;
+    const double ballSize = 36;
 
     final currentPos = _computePosition(_ctrl.value);
 
     return Stack(
       children: [
-        // Trail
         CustomPaint(
           painter: _TrailPainter(
             trail: List.from(_trail),
@@ -94,7 +94,6 @@ class _BallArcAnimationOverlayState extends State<BallArcAnimationOverlay>
           ),
           size: Size.infinite,
         ),
-        // Ball
         Positioned(
           left: currentPos.dx - ballSize / 2,
           top: currentPos.dy - ballSize / 2,
@@ -156,19 +155,18 @@ class _TrailPainter extends CustomPainter {
   final Color color;
   final double ballSize;
 
-  _TrailPainter({required this.trail, required this.color, required this.ballSize});
+  _TrailPainter(
+      {required this.trail, required this.color, required this.ballSize});
 
   @override
   void paint(Canvas canvas, Size size) {
     if (trail.length < 2) return;
-
     for (int i = 1; i < trail.length; i++) {
       final opacity = (i / trail.length) * 0.45;
       final radius = (ballSize / 2) * (i / trail.length) * 0.7;
       final paint = Paint()
         ..color = color.withOpacity(opacity)
         ..maskFilter = MaskFilter.blur(BlurStyle.normal, radius * 0.8);
-
       canvas.drawCircle(trail[i].position, radius, paint);
     }
   }

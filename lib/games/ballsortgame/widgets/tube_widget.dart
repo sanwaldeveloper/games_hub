@@ -28,6 +28,8 @@ class TubeWidget extends StatelessWidget {
     final balls = tube.balls;
     final bool locked = tube.isLocked;
     const double gap = 2.0;
+
+    // FIX: N slots = N balls + (N-1) gaps
     final double innerH = ballSize * capacity + gap * (capacity - 1);
     final double tubeH = innerH + 16;
     final double tubeW = ballSize + 14;
@@ -69,7 +71,7 @@ class TubeWidget extends StatelessWidget {
                   height: innerH,
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.end,
-                    mainAxisSize: MainAxisSize.max,
+                    mainAxisSize: MainAxisSize.min,
                     children: _buildSlots(balls, gap),
                   ),
                 ),
@@ -82,8 +84,8 @@ class TubeWidget extends StatelessWidget {
   }
 
   List<Widget> _buildSlots(List<BallModel> balls, double gap) {
-    final int emptySlots = capacity - balls.length;
     final List<Widget> children = [];
+    final int emptySlots = capacity - balls.length;
 
     for (int i = 0; i < emptySlots; i++) {
       children.add(SizedBox(width: ballSize, height: ballSize));
@@ -92,13 +94,15 @@ class TubeWidget extends StatelessWidget {
       }
     }
 
-    for (int i = 0; i < balls.length; i++) {
+    final reversedBalls = balls.reversed.toList();
+    for (int i = 0; i < reversedBalls.length; i++) {
+      final isTopBall = i == 0;
       children.add(BallWidget(
-        ball: balls[i],
+        ball: reversedBalls[i],
         size: ballSize,
-        isLifted: isSelected && i == balls.length - 1,
+        isLifted: isSelected && isTopBall,
       ));
-      if (i < balls.length - 1) {
+      if (i < reversedBalls.length - 1) {
         children.add(SizedBox(height: gap));
       }
     }
@@ -134,27 +138,18 @@ class _TubePainter extends CustomPainter {
           radius: Radius.circular(r), clockwise: false)
       ..lineTo(size.width, 0);
 
-    // Fill
     canvas.drawPath(uPath, Paint()..color = fillColor);
 
-    // Glow
     if (isSelected) {
-      canvas.drawPath(
-        uPath,
-        Paint()
-          ..color = const Color(0xFF6C63FF).withOpacity(0.22)
-          ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 10),
-      );
+      canvas.drawPath(uPath, Paint()
+        ..color = const Color(0xFF6C63FF).withOpacity(0.22)
+        ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 10));
     } else if (isLocked) {
-      canvas.drawPath(
-        uPath,
-        Paint()
-          ..color = const Color(0xFF2ECC71).withOpacity(0.28)
-          ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 12),
-      );
+      canvas.drawPath(uPath, Paint()
+        ..color = const Color(0xFF2ECC71).withOpacity(0.28)
+        ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 12));
     }
 
-    // Glass highlight strip
     canvas.drawLine(
       Offset(sw + 2.5, 10),
       Offset(sw + 2.5, size.height - r - 6),
@@ -164,15 +159,11 @@ class _TubePainter extends CustomPainter {
         ..strokeCap = StrokeCap.round,
     );
 
-    // Border stroke
-    canvas.drawPath(
-      uPath,
-      Paint()
-        ..color = borderColor
-        ..style = PaintingStyle.stroke
-        ..strokeWidth = sw
-        ..strokeCap = StrokeCap.round,
-    );
+    canvas.drawPath(uPath, Paint()
+      ..color = borderColor
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = sw
+      ..strokeCap = StrokeCap.round);
   }
 
   @override

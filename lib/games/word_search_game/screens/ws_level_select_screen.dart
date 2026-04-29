@@ -81,7 +81,7 @@ class _WSLevelSelectScreenState extends State<WSLevelSelectScreen> {
               childAspectRatio: 0.94,
             ),
             itemCount: _levels.length,
-            itemBuilder: (_, i) =>
+            itemBuilder: (ctx, i) =>
                 _LevelCard(level: _levels[i], gp: gp),
           ),
         ),
@@ -105,9 +105,17 @@ class _LevelCard extends StatelessWidget {
     return GestureDetector(
       onTap: unlocked
           ? () {
+              // ✅ FIX: pehle level load karo, phir provider.value ke saath navigate karo
               gp.loadLevel(level);
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (_) => const WSGameScreen()));
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (_) => ChangeNotifierProvider.value(
+                    value: gp,
+                    child: const WSGameScreen(),
+                  ),
+                ),
+              );
             }
           : null,
       child: Stack(children: [

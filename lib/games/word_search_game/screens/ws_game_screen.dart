@@ -34,6 +34,7 @@ class _WSGameScreenState extends State<WSGameScreen> {
 
   @override
   Widget build(BuildContext context) {
+    // ✅ FIX: Provider context issue — Consumer ke andar provider read karo
     return Consumer<WSGameProvider>(builder: (context, gp, _) {
       final gs = gp.gameState;
       final level = gp.currentLevel;
@@ -52,8 +53,17 @@ class _WSGameScreenState extends State<WSGameScreen> {
         Future.delayed(const Duration(milliseconds: 700), () {
           if (mounted) {
             gp.resetConfetti();
-            Navigator.pushReplacement(context,
-                MaterialPageRoute(builder: (_) => const WSLevelCompleteScreen()));
+            // ✅ FIX: Provider ko WSLevelCompleteScreen tak pass karo
+            final provider = context.read<WSGameProvider>();
+            Navigator.pushReplacement(
+              context,
+              MaterialPageRoute(
+                builder: (_) => ChangeNotifierProvider.value(
+                  value: provider,
+                  child: const WSLevelCompleteScreen(),
+                ),
+              ),
+            );
           }
         });
       }
@@ -66,11 +76,17 @@ class _WSGameScreenState extends State<WSGameScreen> {
             icon: const Icon(Icons.arrow_back_ios_rounded, color: Colors.white),
             onPressed: () => Navigator.pop(context),
           ),
+          // ✅ FIX: Overflow fix — Flexible wrap karo title Row mein
           title: Row(children: [
             Text(level.themeIcon, style: const TextStyle(fontSize: 20)),
             const SizedBox(width: 8),
-            Text(level.theme,
-                style: const TextStyle(color: Colors.white)),
+            Flexible(
+              child: Text(
+                level.theme,
+                style: const TextStyle(color: Colors.white),
+                overflow: TextOverflow.ellipsis,
+              ),
+            ),
           ]),
           actions: [
             // Timer
@@ -174,7 +190,11 @@ class _WSGameScreenState extends State<WSGameScreen> {
       context: ctx,
       isDismissible: false,
       backgroundColor: Colors.transparent,
-      builder: (_) => _PauseSheet(gp: gp),
+      builder: (_) => ChangeNotifierProvider.value(
+        value: gp,
+        // ✅ FIX: _PauseSheet ko bhi provider pass karo bottom sheet mein
+        child: _PauseSheet(gp: gp),
+      ),
     ).then((_) {
       if (gp.gameState?.isPaused == true) gp.togglePause();
     });

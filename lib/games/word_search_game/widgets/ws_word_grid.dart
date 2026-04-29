@@ -74,7 +74,9 @@ class _WSWordGridState extends State<WSWordGrid> {
           final pos = _posFromOffset(d.localPosition, gridSize);
           if (pos != null) gp.updateSelection(pos);
         },
-        onPanEnd: (_) => gp.endSelection(),
+        // ✅ FIX: async callback — await endSelection() taake
+        //         level complete hone par unlock sahi ho
+        onPanEnd: (_) async => await gp.endSelection(),
         child: Container(
           key: _gridKey,
           child: Column(
